@@ -80,7 +80,7 @@ if `prom_m'>10 & `prom_s'==0.3 local cont=`cont'+1
 gen alea=rnormal()
 local prom_m=0
 local prom_s=0
-while (`prom_m'<10)&(`prom_s'!=0.3) {
+while (`prom_m'<10)|(`prom_s'!=0.3) {
 replace alea=rnormal()
 sort alea
 sum ingxh in 1/10
